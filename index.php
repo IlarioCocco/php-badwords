@@ -10,7 +10,7 @@
 $frasebadWords = "avete la faccia come il";
 // una parola da censurare viene passata dall' utente tramite GET  
 $badWord = $_GET['badWord'];
-
+// frase da censurare
 $frasebadWordsCensured = "avete la faccia come il Culo";
 
 
