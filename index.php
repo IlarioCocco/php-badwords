@@ -7,9 +7,11 @@
 //     vel recusandae modi repellat.";
 
 // creo variabile a mia scelta con paragrafo di testo  
-$frasebadWords = "avete la faccia come il ...";
+$frasebadWords = "avete la faccia come il";
 // una parola da censurare viene passata dall' utente tramite GET  
 $badWord = $_GET['badWord'];
+
+$frasebadWordsCensured = "avete la faccia come il Culo";
 
 
 ?>
@@ -55,7 +57,10 @@ $badWord = $_GET['badWord'];
         <?php echo $frasebadWords; ?> <?php echo $badWord; ?>
     </p>
     <p>
-        <?php echo str_replace('Culo', '(***)', $frasebadWords);  ?>
+        <?php echo str_replace('Culo', '(***)', $frasebadWordsCensured);  ?>
+    </p>
+    <p>
+        <strong>lunghezza frase censurata: </strong> <?php echo strlen($frasebadWordsCensured) ?> <strong>caratteri</strong>
     </p>
 
 
